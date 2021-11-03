@@ -1,0 +1,31 @@
+задача 1
+def nested_sum(t):
+    a=0
+    for i in range(len(t)):
+        a += sum(t[i])
+    return(a)
+t=[[1,2,3],[4,5,6],[7,8,9]]
+print(nested_sum(t))
+
+задача 2
+def cumsum(t):
+    a=[]
+    b=0
+    for i in range(len(t)):
+        b += t[i]
+        a.append(b)
+    return(a)
+t=[1,2,3,4,5,6]
+print(cumsum(t))
+
+задача 3
+def middle(t):
+    return t[1:-1]
+t=[1,2,3]
+print(middle(t))
+
+задача 4
+t=[1,2,3,4,5]
+def chop(t):
+    return t[1:-1]
+print(chop(t))
